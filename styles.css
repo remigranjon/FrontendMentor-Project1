@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Inter";
+    src :url("fonts/Inter.ttf")
+}
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("fonts/LexendDeca-Regular.ttf");
+}
+
+
+body {
+    background-color : hsl(233, 47%, 7%);
+}
+/* -------------------------------------------------------------------------- */
+/* Header styling - The header refers to the main part of the page i.e. the card 
+with title, paragraph and statistics as well as the purple picture on the side*/
+/* -------------------------------------------------------------------------- */
+
+header {
+    width : 80%;
+    margin : 50px auto;
+    display : flex;
+    /* border-radius: 5px; */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Card styling - The card comes with a title a paragraph(or description) and 
+some statistics with a h1 and a paragraph per topic*/
+/* -------------------------------------------------------------------------- */
+
+header #card {
+    background-color : hsl(244, 38%, 16%);
+    padding : 30px 5.5%;
+    width : 39%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+header #card #card_title {
+    font-size : 2em;
+    font-family :"Lexend Deca", Arial, Helvetica, sans-serif;
+    color : hsl(0, 0%, 100%);
+    margin-bottom : 30px;
+}
+
+header #card #card_description {
+    font-size : 0.85em;
+    font-family : "Lexend Deca", Arial, Helvetica, sans-serif;
+    color : hsla(0, 0%, 100%, 0.6);
+    font-weight : 400;
+    line-height : 1.7em;
+    width : 85%;
+    margin-bottom : 70px;
+}
+
+header #card #stats {
+    display :flex;
+}
+
+header #card #stats #companies {
+    width :33%;
+}
+header #card #stats #templates {
+    width : 33%;
+}
+header #card #stats #queries {
+    width : 33;
+}
+
+header #card #stats h1 {
+    color : hsl(0, 0%, 100%);
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin : 2.5px 0;
+}
+
+header #card #stats p{
+    color : hsla(0, 0%, 100%, 0.6);
+    font-family : "Inter", Arial, Helvetica, sans-serif;
+    font-size : 0.9em;
+    text-transform : uppercase; 
+    margin : 2.5px 0;
+    font-weight : 550;
+}
+/* -------------------------------------------------------------------------- */
+/* Aside styling - The aside is basically a picture with a purple background.
+The picture is function of the user's screen's size*/
+/* -------------------------------------------------------------------------- */
+
+header aside {
+    background-color : hsl(277, 83%, 21%);
+    /* background-image: url("images/image-header-desktop.jpg"); */
+    width : 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header aside #image_aside_desktop {
+    opacity: 0.3;
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header aside #image_aside_mobile {
+    display :  none;
+}
